@@ -9,7 +9,7 @@ class Foo
   property :_id, Serial
   property :created_at, DateTime
 
-#  has 1, :buildInfo
+  has 1, :bar
 end
 
 class Bar
@@ -18,5 +18,5 @@ class Bar
   property :created_at, DateTime
 
 
-#  belongs_to :device_info
+  belongs_to :foo
 end

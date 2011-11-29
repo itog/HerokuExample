@@ -16,8 +16,8 @@ def insert
   foo = Foo.create()  
   bar = Bar.create()
 
-#  foo.bar = build
-#  foo.save
+  foo.bar = build
+  foo.save
 end
 
 
