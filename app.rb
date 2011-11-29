@@ -13,16 +13,16 @@ DataMapper::setup(:default, ENV['DATABASE_URL'] || 'sqlite3:./db/db.sqlite3')
 DataMapper.finalize
 
 def insert
-  device = DeviceInfo.create()  
-  build = BuildInfo.create(:VERSION_d_SDK => "hoge")
+  foo = Foo.create()  
+  bar = Bar.create()
 
-  device.buildInfo = build
-  device.save
+#  foo.bar = build
+#  foo.save
 end
 
 
 get '/' do
-  DeviceInfo.all().to_json
+  Foo.all().to_json
 end
 
 get '/add' do
